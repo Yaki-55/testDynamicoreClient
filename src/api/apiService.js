@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'test-dynamicore-server-hlc7bh2gz-yaki55s-projects.vercel.app/api',
+  baseURL: 'https://test-dynamicore-server-ayv6wxfld-yaki55s-projects.vercel.app/api',
+  //baseURL: 'http://localhost:3001/api',
   headers: {
     'Content-Type': 'application/json',
   },
