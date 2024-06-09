@@ -1,0 +1,202 @@
+.botones{
+  grid-column: 1 / -1; /* Ocupa ambas columnas */
+  margin-bottom:-130px ;
+  margin-top: -40%;
+  margin-left: 55%;
+}
+.boton{
+  position: relative;
+  grid-column: 1 / -1; /* Ocupa ambas columnas */
+  margin-bottom:-130px ;
+  margin-top: auto;
+  margin-left: auto;
+}
+.boton button{
+  margin: 22px;
+  border-radius: 25px;
+}
+.botones button {
+  margin: 22px;
+  border-radius: 25px;
+}
+.home-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: auto; /* Ajusta el margen automático para centrar horizontalmente */
+  width: 60%;
+  max-width: 1200px;
+  height: 80%;
+  justify-items: center; /* Centra horizontalmente los elementos dentro del contenedor */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  position: absolute; /* Coloca el contenedor de manera absoluta */
+  top: 50%; /* Coloca el contenedor en el 50% del eje Y */
+  left: 50%; /* Coloca el contenedor en el 50% del eje X */
+  transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
+}
+.home-container h1 {
+  text-align: center;
+  color: #1f169f;
+  letter-spacing: 10px;
+}
+
+.home-container table {
+  position: center;
+
+  width: 100%;
+  max-width: 100%; /* Asegura que la tabla no sea más ancha que su contenedor */
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto; /* Permite desplazamiento horizontal si la tabla es muy ancha */
+}
+.home-container th, .home-container td {
+  border: 1px solid #000000;
+  padding: 6px;
+  text-align: left;
+  color: black;
+}
+
+.home-container th {
+  background-color: #666;
+  color: white;
+  align-content: center;
+}
+
+.home-container td {
+  background-color: #fff;
+}
+.hmno {
+  color: #000000;
+  flex: 1; /* Allow each item to grow and shrink proportionally */
+  /*text-align: center;  Center text within each item */
+}
+.modal {
+  display: inline-block;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Reducido el margen superior e inferior */
+  padding: 15px; /* Reducido el padding para ocupar menos espacio */
+  border-radius: 8px;
+  width: 70%; /* Reducido el ancho */
+  max-width: 400px; /* Establecido un ancho máximo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.formularioUsuario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0%;
+
+    position: relative; /* Cambia la posición del contenedor */
+    top: 10%; /* Desplaza el contenedor hacia abajo */
+    left: 50%; /* Centra horizontalmente el contenedor */
+    transform: translateX(-50%); /* Centra horizontalmente el contenedor */
+    width: 50%; 
+    height: 60%;
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 2%; /* Espacio interno del contenedor */
+}
+.formulario_usuario{
+  margin-top: 9%;
+  margin-left: 10%;
+}
+.title {
+  grid-column: 1 / -1; /* Ocupa ambas columnas */
+  margin-bottom:-130px ; /* Espacio debajo del título */
+  margin-top: -7%;
+  text-align: center;
+  font-size: 300%;
+  color: #000000;
+}
+.formulario_usuario_message {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 2%;
+  color: #1A2B96;
+  font-size: 170%;
+  font-weight: bold;
+  margin-left: 7%;
+}
+.formulario__btn1{
+  position: relative;
+  margin: 22px;
+  border-radius: 25px;
+  background-color: #DE1010;
+}
+.formulario__btn2{
+  position: relative;
+  background-color:#0F880D;
+  margin: 22px;
+  border-radius: 25px;
+}
+.formulario__btn1,.formulario__btn2 {
+  width: 50%; 
+  height: 20%;
+  font-size: 100%;/*tamaño de letra*/
+  /*background: #000;*/
+  color: #fff;
+  font-weight: bold; /*grosor de letra*/
+  border: none; /*grosor de borde*/
+  /*cursor: pointer;*/
+  transition: .1s ease all; /*duracion de las tranciciones*/ 
+}  
+.formulario__btn1:hover {
+  box-shadow: 3px 0px 30px rgb(23, 22, 22);
+}
+.formulario__btn2:hover {
+  box-shadow: 3px 0px 30px rgb(23, 22, 22);
+}
+.formulario__label {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 170%;
+  margin-left: 1%;
+}
+.formulario_usuario label{
+color: #1A2B96;
+}
+mark{
+  background-color: #f0f0f0; /* Cambia el color de fondo de la letra marcada */
+    color: red; /* Cambia el color del texto de la letra marcada */
+  font-size: 30px;
+}
+.formulario__input {
+  width: 85%;
+  color:#000000;
+  background: #bfbfbf;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  /*line-height: 40px;*/
+  /*padding: 10px 50px 0 10px;*/
+  transition: .3s ease all;
+  font-size: 200%;
+}
+.formulario_usuario input[type="checkbox"]{
+width: 120px; /* Ancho del checkbox */
+height: 40px; /* Alto del checkbox */
+margin-right: 100px; /* Margen a la derecha del checkbox */
+cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
+
+}
+.formulario_usuario input[type="checkbox"]::placeholder {
+color: #413f3f;
+}
+.formulario__input::placeholder {
+  color: #413f3f;
+  font-size: 90%;
+}
+.formulario__input:focus {
+  background: #FFF;
+  border: 5px solid #0075FF;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
